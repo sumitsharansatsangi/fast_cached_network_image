@@ -73,8 +73,9 @@ class _MyAppState extends State<MyApp> {
           const SizedBox(height: 120),
           MaterialButton(
             onPressed: () async {
-              setState(() => isImageCached =
-                  FastCachedImageConfig.isCached(imageUrl: url1));
+              final isCached =
+                  await FastCachedImageConfig.isCached(imageUrl: url1);
+              setState(() => isImageCached = isCached);
             },
             child: const Text('check image is cached or not'),
           ),
