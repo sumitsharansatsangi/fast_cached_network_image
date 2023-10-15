@@ -16,7 +16,8 @@ dependencies:
 
   dio: ^5.3.3
   isar: ^3.1.0+1
-  isar_flutter_libs: ^3.1.0+1
+  isar_flutter_libs:
+    git: https://github.com/kumsumit/isar_flutter_libs.git
   path_provider:
     git: https://github.com/kumsumit/path_provider.git
   uuid: ^4.1.0
