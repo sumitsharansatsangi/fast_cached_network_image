@@ -309,7 +309,7 @@ class _FastCachedImageState extends State<FastCachedImage>
       if (widget.loadingBuilder != null) {
         widget.loadingBuilder!(context, _progressData);
       }
-        Response response = await dio.get(url,
+      Response response = await dio.get(url,
           options: Options(
             responseType: ResponseType.bytes,
             headers: widget.httpHeaders
