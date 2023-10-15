@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
               loadingBuilder: (context, progress) {
                 debugPrint(
                     'Progress: ${progress.isDownloading} ${progress.downloadedBytes} / ${progress.totalBytes}');
-                return Container(
+                return ColoredBox(
                   color: Colors.yellow,
                   child: Stack(
                     alignment: Alignment.center,
