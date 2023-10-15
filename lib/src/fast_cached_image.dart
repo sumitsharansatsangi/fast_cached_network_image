@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 import 'dart:ui' as ui;
 import 'package:fast_cached_network_image/src/models/image.dart';
 import 'package:flutter/foundation.dart';
@@ -107,6 +108,8 @@ class FastCachedImage extends StatefulWidget {
   ///[disableErrorLogs] can be set to true if you want to ignore error logs from the widget
   final bool disableErrorLogs;
 
+  final Map<String, String>? httpHeaders;
+
   ///[FastCachedImage] creates a widget to display network images. This widget downloads the network image
   ///when this widget is build for the first time. Later whenever this widget is called the image will be displayed from
   ///the downloaded database instead of the network. This can avoid unnecessary downloads and load images much faster.
@@ -132,6 +135,7 @@ class FastCachedImage extends StatefulWidget {
       this.isAntiAlias = false,
       this.filterQuality = FilterQuality.low,
       this.fadeInDuration = const Duration(milliseconds: 500),
+      this.httpHeaders,
       int? cacheWidth,
       int? cacheHeight,
       Key? key})
@@ -305,9 +309,13 @@ class _FastCachedImageState extends State<FastCachedImage>
       if (widget.loadingBuilder != null) {
         widget.loadingBuilder!(context, _progressData);
       }
-      Response response = await dio
-          .get(url, options: Options(responseType: ResponseType.bytes),
-              onReceiveProgress: (int received, int total) {
+        Response response = await dio.get(url,
+          options: Options(
+            responseType: ResponseType.bytes,
+            headers: widget.httpHeaders
+              ?..remove(HttpHeaders.contentTypeHeader)
+              ..remove(HttpHeaders.acceptHeader),
+          ), onReceiveProgress: (int received, int total) {
         if (received < 0 || total < 0) return;
         if (widget.loadingBuilder != null) {
           _progressData.downloadedBytes = received;
