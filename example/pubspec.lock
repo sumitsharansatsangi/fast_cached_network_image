@@ -37,10 +37,10 @@ packages:
     dependency: transitive
     description:
       name: collection
-      sha256: f092b211a4319e98e5ff58223576de6c2803db36221657b46c82574721240687
+      sha256: ee67cb0715911d28db6bf4af1026078bd6f0128b07a5f66fb2ed94ec6783c09a
       url: "https://pub.dev"
     source: hosted
-    version: "1.17.2"
+    version: "1.18.0"
   crypto:
     dependency: transitive
     description:
@@ -125,10 +125,11 @@ packages:
   isar_flutter_libs:
     dependency: transitive
     description:
-      name: isar_flutter_libs
-      sha256: bc6768cc4b9c61aabff77152e7f33b4b17d2fc93134f7af1c3dd51500fe8d5e8
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: "2a7699192a68e005fb737416e7f80b44bbbb2759"
+      url: "https://github.com/kumsumit/isar_flutter_libs.git"
+    source: git
     version: "3.1.0+1"
   js:
     dependency: transitive
@@ -166,10 +167,10 @@ packages:
     dependency: transitive
     description:
       name: meta
-      sha256: "3c74dbf8763d36539f114c799d8a2d87343b5067e9d796ca22b5eb8437090ee3"
+      sha256: a6e590c838b18133bb482a2745ad77c5bb7715fb0451209e1a7567d416678b8e
       url: "https://pub.dev"
     source: hosted
-    version: "1.9.1"
+    version: "1.10.0"
   path:
     dependency: transitive
     description:
@@ -183,7 +184,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: b61812490204279e39c3319aaca9509e93134bdb
+      resolved-ref: "9f3f2100cf42f0c460ff5dfda8f2dae9ddb728ee"
       url: "https://github.com/kumsumit/path_provider.git"
     source: git
     version: "2.1.1"
@@ -192,16 +193,16 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: e2f766fe5ae3f378b2335786cbc9d77fb1921a55
+      resolved-ref: "8c8001a14283d8937b7de7d6a3fe33d339223e36"
       url: "https://github.com/kumsumit/path_provider_android.git"
     source: git
-    version: "2.2.0"
+    version: "2.2.1"
   path_provider_foundation:
     dependency: transitive
     description:
       path: "."
       ref: HEAD
-      resolved-ref: d03469b9c2e33ae3766e3b211fa51688e8fd3b35
+      resolved-ref: "63840279dea77c563a0daf4bda5cbdda604f86ba"
       url: "https://github.com/kumsumit/path_provider_foundation.git"
     source: git
     version: "2.3.1"
@@ -210,7 +211,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: b8224d82f726a802061c8b97484073fd42c031d4
+      resolved-ref: "4006480212e39589610324bf6854e6b8ced12964"
       url: "https://github.com/kumsumit/path_provider_linux.git"
     source: git
     version: "2.2.1"
@@ -219,7 +220,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "651bf928de545c4bd4903d8a9515c22602874856"
+      resolved-ref: d96780dcd17f73cf7927614e931e6c4b993e5b68
       url: "https://github.com/kumsumit/path_provider_platform_interface.git"
     source: git
     version: "2.1.1"
@@ -228,7 +229,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: ed44a91bd80fef05cbb4de655f62bc2cd12a6108
+      resolved-ref: "7569e770937cc541259e8ebd8f48b8a4c3a1f84c"
       url: "https://github.com/kumsumit/path_provider_windows.git"
     source: git
     version: "2.2.1"
@@ -274,18 +275,18 @@ packages:
     dependency: transitive
     description:
       name: stack_trace
-      sha256: c3c7d8edb15bee7f0f74debd4b9c5f3c2ea86766fe4178eb2a18eb30a0bdaed5
+      sha256: "73713990125a6d93122541237550ee3352a2d84baad52d375a4cad2eb9b7ce0b"
       url: "https://pub.dev"
     source: hosted
-    version: "1.11.0"
+    version: "1.11.1"
   stream_channel:
     dependency: transitive
     description:
       name: stream_channel
-      sha256: "83615bee9045c1d322bbbd1ba209b7a749c2cbcdcb3fdd1df8eb488b3279c1c8"
+      sha256: ba2aa5d8cc609d96bbb2899c28934f9e1af5cddbd60a827822ea467161eb54e7
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.1"
+    version: "2.1.2"
   string_scanner:
     dependency: transitive
     description:
@@ -306,10 +307,10 @@ packages:
     dependency: transitive
     description:
       name: test_api
-      sha256: "75760ffd7786fffdfb9597c35c5b27eaeec82be8edfb6d71d32651128ed7aab8"
+      sha256: "5c2f730018264d276c20e4f1503fd1308dfbbae39ec8ee63c5236311ac06954b"
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.0"
+    version: "0.6.1"
   typed_data:
     dependency: transitive
     description:
@@ -322,10 +323,10 @@ packages:
     dependency: transitive
     description:
       name: uuid
-      sha256: b715b8d3858b6fa9f68f87d20d98830283628014750c2b09b6f516c1da4af2a7
+      sha256: df5a4d8f22ee4ccd77f8839ac7cb274ebc11ef9adcce8b92be14b797fe889921
       url: "https://pub.dev"
     source: hosted
-    version: "4.1.0"
+    version: "4.2.1"
   vector_math:
     dependency: transitive
     description:
@@ -338,18 +339,18 @@ packages:
     dependency: transitive
     description:
       name: web
-      sha256: dc8ccd225a2005c1be616fe02951e2e342092edf968cf0844220383757ef8f10
+      sha256: afe077240a270dcfd2aafe77602b4113645af95d0ad31128cc02bce5ac5d5152
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.4-beta"
+    version: "0.3.0"
   win32:
     dependency: transitive
     description:
       name: win32
-      sha256: "350a11abd2d1d97e0cc7a28a81b781c08002aa2864d9e3f192ca0ffa18b06ed3"
+      sha256: "7c99c0e1e2fa190b48d25c81ca5e42036d5cac81430ef249027d97b0935c553f"
       url: "https://pub.dev"
     source: hosted
-    version: "5.0.9"
+    version: "5.1.0"
   xdg_directories:
     dependency: transitive
     description:
@@ -360,5 +361,5 @@ packages:
     source: git
     version: "1.0.3"
 sdks:
-  dart: ">=3.1.0 <4.0.0"
-  flutter: ">=3.13.0"
+  dart: ">=3.2.0 <4.0.0"
+  flutter: ">=3.16.0"

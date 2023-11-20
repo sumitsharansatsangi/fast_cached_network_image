@@ -7,8 +7,8 @@ repository: https://github.com/CHRISTOPANANJICKAL/fast_cached_network_image
 issue_tracker: https://github.com/CHRISTOPANANJICKAL/fast_cached_network_image/issues
 
 environment:
-  sdk: '>=3.1.0 <4.0.0'
-  flutter: ">=3.13.0"
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: ">=3.16.0"
 
 dependencies:
   flutter:
@@ -20,12 +20,14 @@ dependencies:
     git: https://github.com/kumsumit/isar_flutter_libs.git
   path_provider:
     git: https://github.com/kumsumit/path_provider.git
-  uuid: ^4.1.0
+  uuid: ^4.2.1
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.3
-  isar_generator: ^3.1.0+1
+  flutter_lints: 
+    git: https://github.com/kumsumit/flutter_lints.git
+  isar_generator:
+    git: https://github.com/kumsumit/isar_generator.git
   build_runner: ^2.4.6 
